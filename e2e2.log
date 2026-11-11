@@ -1,0 +1,51 @@
+=== tests
+......................................                                   [100%]
+38 passed in 15.60s
+=== ingest
+northwind_annual_report.pdf: 5 chunks (1 tables, 1 from OCR)
+"text": "|(in millions, except per share)|FY2025|FY2024|\n|---|---|---|\n|Total revenue|842.6|761.3|\n|Operating income|118.9|97.2|\n|Net income|84.1|66.8|\n|Diluted earnings per share|3.27|2.61|"
+=== ask: What was net income in FY2025, and how does it compare with FY2024?
+Net income in FY2025 was $84.1 million, which represents an increase from $66.8 million in FY2024.
+WARNING: the answer cites no source.
+=== ask: What share of revenue came from the largest customer?
+18.5% [1]
+Sources:
+[1] northwind_annual_report.pdf p.1 | Risk Factors (score 0.691, text)
+=== ask: What were capital expenditures in fiscal 2025?
+$57.4 million [1]
+Sources:
+[1] northwind_annual_report.pdf p.2 | Item 7. Management's Discussion and Analysis (score 0.644, text)
+=== ask: What were total liabilities in FY2025?
+587.9 [2]
+Sources:
+[2] northwind_annual_report.pdf p.2 | Consolidated Statements of Income (score 0.692, table)
+=== ask: Who is the chief executive officer?
+Not found in the documents.
+=== extract
+[{"field":"netincome","value":84.1,"unit":"$","period":"FY2025","source":"northwind_annual_report.pdf","page":2,"status":"ok"},{"field":"totalassets","value":1204.7,"unit":"million","period":"FY2025","source":"northwind_annual_report.pdf","page":3,"status":"ok"}]
+=== train
+data\finetune\train.jsonl: 4 examples, 8 dropped for exceeding 1024 tokens
+data\finetune\valid.jsonl: 4 examples, 7 dropped for exceeding 1024 tokens
+trainable params: 4,358,144 || all params: 1,548,072,448 || trainable%: 0.2815
+  super().__init__(loader)
+[A
+                                             [A
+{'eval_loss': '1.872', 'eval_runtime': '68.75', 'eval_samples_per_second': '0.058', 'eval_steps_per_second': '0.058', 'epoch': '0.5'}
+{'train_runtime': '171.9', 'train_samples_per_second': '0.012', 'train_steps_per_second': '0.012', 'train_loss': '2.45', 'epoch': '0.5'}
+Saved adapter to outputs\smoke: {'base_model': 'Qwen/Qwen2.5-1.5B-Instruct', 'mode': 'lora', 'train_examples': 4, 'train_loss': 2.4500653743743896, 'steps': 2}
+total 28241
+drwxr-xr-x 1 hvsax 197609        0 Nov  3 15:23 .
+drwxr-xr-x 1 hvsax 197609        0 Nov  3 15:20 ..
+-rw-r--r-- 1 hvsax 197609     5206 Nov  3 15:23 README.md
+-rw-r--r-- 1 hvsax 197609     1180 Nov  3 15:23 adapter_config.json
+-rw-r--r-- 1 hvsax 197609 17462432 Nov  3 15:23 adapter_model.safetensors
+-rw-r--r-- 1 hvsax 197609     2561 Nov  3 15:23 chat_template.jinja
+drwxr-xr-x 1 hvsax 197609        0 Nov  3 15:23 checkpoint-2
+-rw-r--r-- 1 hvsax 197609      145 Nov  3 15:23 findoc_training.json
+-rw-r--r-- 1 hvsax 197609 11421892 Nov  3 15:23 tokenizer.json
+-rw-r--r-- 1 hvsax 197609      724 Nov  3 15:23 tokenizer_config.json
+=== evaluate
+base {"accuracy": 0.0, "refusal_rate": 0.0, "citation_rate": 0.0, "answerable": 3, "answerable_correct": 0, "unanswerable": 0, "unanswerable_refused": 0, "cited": 0}
+adapter {"accuracy": 0.0, "refusal_rate": 0.0, "citation_rate": 0.0, "answerable": 3, "answerable_correct": 0, "unanswerable": 0, "unanswerable_refused": 0, "cited": 0}
+Wrote outputs\smoke_eval.json
+DONE

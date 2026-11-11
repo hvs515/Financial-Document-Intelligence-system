@@ -1,0 +1,249 @@
+
+=== sample
+Wrote samples\northwind_annual_report.pdf
+
+=== ingest
+WARNING: northwind_annual_report.pdf page 3 looks scanned and was skipped: Tesseract was not found. Install it, or set FINDOC_TESSERACT_CMD to its path.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2510.37it/s]
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+northwind_annual_report.pdf: 5 chunks (1 tables, 0 from OCR)
+  NOT INDEXED, scanned pages without OCR: [3]
+exit=2
+
+=== sources
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2087.85it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+northwind_annual_report.pdf: 5 chunks
+
+=== search
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2142.84it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+[1] northwind_annual_report.pdf p.2 | Consolidated Statements of Income (score 0.734, table)
+|Consolidated Statements of Income|Col2|Col3|
+|---|---|---|
+|(in millions, except per share)|FY2025|FY2024|
+|Total revenue|842.6|761.3|
+|Operating income|118.9|97.2|
+|Net income|84.1|66.8|
+|Diluted earnings per share|3.27|2.61|
+
+[2] northwind_annual_report.pdf p.2 | Consolidated Statements of Income (score 0.716, text)
+Consolidated Statements of Income
+
+
+=== ask-table
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2387.14it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   3%|▎         | 11/338 [00:00<00:02, 109.95it/s]Loading weights:   7%|▋         | 22/338 [00:00<00:08, 37.91it/s] Loading weights:   9%|▊         | 29/338 [00:00<00:08, 35.70it/s]Loading weights:  14%|█▍        | 47/338 [00:00<00:04, 62.34it/s]Loading weights:  17%|█▋        | 56/338 [00:00<00:04, 66.38it/s]Loading weights:  19%|█▉        | 65/338 [00:01<00:04, 58.11it/s]Loading weights:  22%|██▏       | 73/338 [00:01<00:04, 60.61it/s]Loading weights:  24%|██▍       | 81/338 [00:01<00:04, 61.31it/s]Loading weights:  26%|██▌       | 88/338 [00:01<00:04, 56.67it/s]Loading weights:  28%|██▊       | 95/338 [00:01<00:05, 43.16it/s]Loading weights:  30%|██▉       | 101/338 [00:02<00:07, 31.79it/s]Loading weights:  32%|███▏      | 109/338 [00:02<00:06, 35.72it/s]Loading weights:  36%|███▌      | 120/338 [00:02<00:05, 42.67it/s]Loading weights:  37%|███▋      | 125/338 [00:02<00:06, 32.15it/s]Loading weights:  39%|███▉      | 131/338 [00:02<00:05, 36.30it/s]Loading weights:  44%|████▍     | 149/338 [00:03<00:03, 54.34it/s]Loading weights:  46%|████▌     | 156/338 [00:03<00:03, 45.70it/s]Loading weights:  48%|████▊     | 163/338 [00:03<00:05, 30.00it/s]Loading weights: 100%|██████████| 338/338 [00:03<00:00, 87.87it/s]
+Net income in FY2025 was $84.1 million, which represents an increase from $66.8 million in FY2024.
+
+WARNING: the answer cites no source.
+
+=== ask-prose
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  99%|█████████▉| 198/199 [00:00<00:00, 1979.73it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1985.79it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/338 [00:00<00:15, 20.94it/s]Loading weights:   5%|▍         | 16/338 [00:00<00:08, 37.30it/s]Loading weights:   8%|▊         | 26/338 [00:00<00:07, 40.75it/s]Loading weights:  13%|█▎        | 45/338 [00:00<00:04, 72.80it/s]Loading weights:  16%|█▋        | 55/338 [00:01<00:04, 62.55it/s]Loading weights:  19%|█▊        | 63/338 [00:01<00:04, 64.22it/s]Loading weights:  21%|██        | 71/338 [00:01<00:04, 57.19it/s]Loading weights:  23%|██▎       | 78/338 [00:01<00:04, 57.56it/s]Loading weights:  25%|██▌       | 85/338 [00:01<00:04, 56.64it/s]Loading weights:  28%|██▊       | 95/338 [00:01<00:03, 63.31it/s]Loading weights:  30%|███       | 102/338 [00:01<00:03, 62.80it/s]Loading weights:  32%|███▏      | 109/338 [00:01<00:03, 61.88it/s]Loading weights:  34%|███▍      | 116/338 [00:02<00:04, 49.67it/s]Loading weights:  37%|███▋      | 124/338 [00:02<00:04, 44.64it/s]Loading weights:  38%|███▊      | 130/338 [00:02<00:04, 46.38it/s]Loading weights:  40%|███▉      | 135/338 [00:02<00:04, 45.59it/s]Loading weights:  41%|████▏     | 140/338 [00:02<00:06, 30.21it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 113.84it/s]
+According to the first excerpt, the largest customer accounted for 18.5% of total revenue in fiscal 2025.
+
+WARNING: the answer cites no source.
+
+=== ask-missing
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3045.82it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   3%|▎         | 10/338 [00:00<00:03, 88.94it/s]Loading weights:   6%|▌         | 19/338 [00:00<00:08, 35.96it/s]Loading weights:   7%|▋         | 25/338 [00:00<00:08, 38.42it/s]Loading weights:  10%|█         | 34/338 [00:00<00:06, 48.68it/s]Loading weights:  12%|█▏        | 40/338 [00:01<00:08, 34.69it/s]Loading weights:  13%|█▎        | 45/338 [00:01<00:09, 32.07it/s]Loading weights:  16%|█▌        | 53/338 [00:01<00:07, 36.08it/s]Loading weights:  17%|█▋        | 58/338 [00:01<00:09, 29.40it/s]Loading weights:  18%|█▊        | 62/338 [00:01<00:09, 29.85it/s]Loading weights:  20%|█▉        | 66/338 [00:02<00:11, 22.96it/s]Loading weights:  20%|██        | 69/338 [00:02<00:12, 22.26it/s]Loading weights:  21%|██▏       | 72/338 [00:02<00:12, 21.69it/s]Loading weights:  23%|██▎       | 77/338 [00:02<00:10, 25.77it/s]Loading weights:  25%|██▍       | 83/338 [00:02<00:08, 30.49it/s]Loading weights:  27%|██▋       | 90/338 [00:02<00:06, 36.90it/s]Loading weights:  29%|██▉       | 99/338 [00:02<00:05, 45.83it/s]Loading weights:  31%|███       | 105/338 [00:03<00:04, 47.17it/s]Loading weights:  33%|███▎      | 110/338 [00:03<00:05, 44.77it/s]Loading weights:  36%|███▌      | 121/338 [00:03<00:03, 54.46it/s]Loading weights:  38%|███▊      | 127/338 [00:03<00:04, 50.36it/s]Loading weights:  39%|███▉      | 133/338 [00:03<00:04, 48.07it/s]Loading weights: 100%|██████████| 338/338 [00:03<00:00, 94.12it/s]
+Not found in the documents.
+
+
+=== qdrant
+WARNING: northwind_annual_report.pdf page 3 looks scanned and was skipped: Tesseract was not found. Install it, or set FINDOC_TESSERACT_CMD to its path.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 2964.13it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+northwind_annual_report.pdf: 5 chunks (1 tables, 0 from OCR)
+  NOT INDEXED, scanned pages without OCR: [3]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4206.69it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+[1] northwind_annual_report.pdf p.2 | Item 7. Management's Discussion and Analysis (score 0.668, text)
+Item 7. Management's Discussion and Analysis
+Total revenue increased to $842.6 million in fiscal 2025 from $761.3 million in fiscal 2024, driven
+by the opening of the Rotterdam terminal. Capital expenditures were $57.4 million. The Company
+repurchased no shares during the year.
+
+
+=== extract
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   3%|▎         | 10/338 [00:00<00:04, 73.92it/s]Loading weights:   7%|▋         | 25/338 [00:00<00:02, 111.38it/s]Loading weights:  11%|█         | 37/338 [00:00<00:03, 86.99it/s] Loading weights:  14%|█▍        | 47/338 [00:00<00:04, 62.04it/s]Loading weights:  17%|█▋        | 56/338 [00:00<00:04, 67.81it/s]Loading weights:  20%|█▉        | 66/338 [00:00<00:03, 74.83it/s]Loading weights:  22%|██▏       | 76/338 [00:00<00:03, 77.85it/s]Loading weights:  25%|██▌       | 85/338 [00:01<00:03, 69.32it/s]Loading weights:  28%|██▊       | 93/338 [00:01<00:04, 59.50it/s]Loading weights:  30%|██▉       | 100/338 [00:01<00:03, 61.30it/s]Loading weights:  32%|███▏      | 107/338 [00:01<00:04, 47.48it/s]Loading weights:  33%|███▎      | 113/338 [00:01<00:04, 48.93it/s]Loading weights:  35%|███▌      | 119/338 [00:01<00:04, 51.33it/s]Loading weights:  37%|███▋      | 125/338 [00:02<00:04, 50.41it/s]Loading weights:  39%|███▉      | 131/338 [00:02<00:05, 39.84it/s]Loading weights:  40%|████      | 136/338 [00:02<00:05, 39.70it/s]Loading weights:  42%|████▏     | 142/338 [00:02<00:04, 43.19it/s]Loading weights:  43%|████▎     | 147/338 [00:02<00:06, 31.79it/s]Loading weights:  45%|████▌     | 153/338 [00:02<00:05, 36.20it/s]Loading weights:  47%|████▋     | 159/338 [00:02<00:04, 40.11it/s]Loading weights: 100%|██████████| 338/338 [00:03<00:00, 112.27it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 113/199 [00:00<00:00, 1129.95it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1941.80it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\embedding.py:27: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  self.dim = self._model.get_sentence_embedding_dimension()
+[
+  {
+    "field": "total revenue",
+    "value": 842.6,
+    "unit": "$",
+    "period": "Fiscal 2025",
+    "source": "northwind_annual_report.pdf",
+    "page": 2,
+    "status": "ok"
+  },
+  {
+    "field": "net income",
+    "value": 84.1,
+    "unit": "$",
+    "period": "FY2025",
+    "source": "northwind_annual_report.pdf",
+    "page": 2,
+    "status": "ok"
+  }
+]
+
+=== prepare
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating train split:   0%|          | 0/6251 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 6251/6251 [00:00<00:00, 70299.62 examples/s]
+Generating test split:   0%|          | 0/1147 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1147/1147 [00:00<00:00, 60688.86 examples/s]
+Generating valid split:   0%|          | 0/883 [00:00<?, ? examples/s]Generating valid split: 100%|██████████| 883/883 [00:00<00:00, 58717.86 examples/s]
+data\finetune\train.jsonl: 6876 examples from 6251 rows
+data\finetune\valid.jsonl: 971 examples from 883 rows
+data\finetune\test.jsonl: 1261 examples from 1147 rows
+
+=== train
+data\finetune\train.jsonl: 8 examples, 21 dropped for exceeding 1024 tokens
+data\finetune\valid.jsonl: 8 examples, 24 dropped for exceeding 1024 tokens
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   4%|▎         | 12/338 [00:00<00:03, 103.65it/s]Loading weights:   7%|▋         | 23/338 [00:00<00:03, 99.43it/s] Loading weights:  10%|▉         | 33/338 [00:00<00:03, 91.32it/s]Loading weights:  13%|█▎        | 43/338 [00:00<00:03, 79.73it/s]Loading weights:  15%|█▌        | 52/338 [00:00<00:03, 80.92it/s]Loading weights:  18%|█▊        | 61/338 [00:00<00:03, 74.74it/s]Loading weights:  21%|██        | 71/338 [00:00<00:03, 68.88it/s]Loading weights:  25%|██▍       | 84/338 [00:01<00:03, 70.02it/s]Loading weights:  28%|██▊       | 95/338 [00:01<00:03, 69.28it/s]Loading weights:  30%|███       | 103/338 [00:01<00:03, 69.29it/s]Loading weights:  35%|███▌      | 119/338 [00:01<00:03, 66.63it/s]Loading weights:  38%|███▊      | 130/338 [00:01<00:03, 67.19it/s]Loading weights:  43%|████▎     | 144/338 [00:01<00:02, 71.22it/s]Loading weights:  45%|████▌     | 153/338 [00:02<00:02, 72.98it/s]Loading weights:  49%|████▉     | 166/338 [00:02<00:02, 75.22it/s]Loading weights:  51%|█████▏    | 174/338 [00:02<00:02, 72.27it/s]Loading weights:  54%|█████▍    | 182/338 [00:02<00:02, 73.25it/s]Loading weights:  57%|█████▋    | 191/338 [00:02<00:02, 65.76it/s]Loading weights:  59%|█████▉    | 200/338 [00:02<00:01, 69.54it/s]Loading weights:  64%|██████▎   | 215/338 [00:02<00:01, 73.48it/s]Loading weights:  67%|██████▋   | 226/338 [00:03<00:01, 75.24it/s]Loading weights:  69%|██████▉   | 234/338 [00:03<00:01, 70.71it/s]Loading weights:  72%|███████▏  | 242/338 [00:03<00:01, 65.29it/s]Loading weights:  74%|███████▍  | 250/338 [00:03<00:01, 59.75it/s]Loading weights:  76%|███████▌  | 257/338 [00:03<00:01, 51.70it/s]Loading weights:  78%|███████▊  | 263/338 [00:03<00:01, 50.10it/s]Loading weights:  81%|████████  | 273/338 [00:03<00:01, 56.27it/s]Loading weights:  83%|████████▎ | 281/338 [00:04<00:01, 49.58it/s]Loading weights:  85%|████████▌ | 288/338 [00:04<00:01, 48.33it/s]Loading weights:  88%|████████▊ | 299/338 [00:04<00:00, 39.48it/s]Loading weights:  91%|█████████▏| 309/338 [00:04<00:00, 46.59it/s]Loading weights:  93%|█████████▎| 315/338 [00:05<00:00, 43.25it/s]Loading weights:  95%|█████████▍| 321/338 [00:05<00:00, 34.96it/s]Loading weights:  97%|█████████▋| 329/338 [00:05<00:00, 26.72it/s]Loading weights: 100%|██████████| 338/338 [00:05<00:00, 58.67it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\finetune\train.py", line 208, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\finetune\train.py", line 161, in main
+    training_args = TrainingArguments(
+        output_dir=str(args.output),
+    ...<20 lines>...
+        seed=args.seed,
+    )
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'warmup_ratio'
+trainable params: 4,358,144 || all params: 1,548,072,448 || trainable%: 0.2815
+
+=== evaluate
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   5%|▌         | 17/338 [00:00<00:01, 167.54it/s]Loading weights:  10%|█         | 34/338 [00:00<00:04, 66.53it/s] Loading weights:  13%|█▎        | 44/338 [00:00<00:04, 68.33it/s]Loading weights:  16%|█▌        | 53/338 [00:00<00:04, 68.10it/s]Loading weights:  18%|█▊        | 61/338 [00:00<00:05, 51.52it/s]Loading weights:  20%|██        | 68/338 [00:01<00:05, 46.31it/s]Loading weights:  22%|██▏       | 74/338 [00:01<00:05, 48.94it/s]Loading weights:  24%|██▎       | 80/338 [00:01<00:06, 38.58it/s]Loading weights:  25%|██▌       | 86/338 [00:01<00:06, 37.96it/s]Loading weights:  27%|██▋       | 92/338 [00:01<00:06, 37.74it/s]Loading weights:  29%|██▊       | 97/338 [00:01<00:06, 39.98it/s]Loading weights:  30%|███       | 103/338 [00:02<00:06, 38.36it/s]Loading weights:  32%|███▏      | 108/338 [00:02<00:05, 39.77it/s]Loading weights:  34%|███▎      | 114/338 [00:02<00:05, 41.68it/s]Loading weights:  35%|███▌      | 119/338 [00:02<00:05, 36.78it/s]Loading weights:  36%|███▋      | 123/338 [00:02<00:06, 35.17it/s]Loading weights:  38%|███▊      | 129/338 [00:02<00:05, 40.71it/s]Loading weights:  40%|███▉      | 134/338 [00:03<00:07, 27.48it/s]Loading weights:  41%|████      | 138/338 [00:03<00:06, 29.47it/s]Loading weights:  44%|████▍     | 149/338 [00:03<00:04, 45.35it/s]Loading weights:  46%|████▌     | 155/338 [00:03<00:05, 36.55it/s]Loading weights: 100%|██████████| 338/338 [00:03<00:00, 94.00it/s]
+httpx2.HTTPStatusError: Client error '401 Unauthorized' for url 'https://huggingface.co/outputs/smoke/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-6ae9841a-1ee71ebd7ff1bc7832ae2b4d;54ec483f-7b87-4e82-8c64-032c2f36d9dd)
+
+Repository Not Found for url: https://huggingface.co/outputs/smoke/resolve/main/config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.
+For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+The above exception was the direct cause of the following exception:
+
+OSError: outputs/smoke is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+
+During handling of the above exception, another exception occurred:
+
+httpx2.HTTPStatusError: Client error '401 Unauthorized' for url 'https://huggingface.co/outputs/smoke/resolve/main/config.json'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\transformers\utils\hub.py", line 537, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\huggingface_hub\utils\_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\huggingface_hub\utils\_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\huggingface_hub\file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\huggingface_hub\file_download.py", line 1194, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\huggingface_hub\file_download.py", line 1954, in _raise_on_head_call_error
+    raise head_call_error
+huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-6ae9841a-67621d78394669a10e3f2bc3;e7a408d1-0abf-401a-aac8-3f89b6fd2e2d)
+
+Repository Not Found for url: https://huggingface.co/outputs/smoke/resolve/main/config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated and your token has the required permissions.
+For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+Invalid username or password.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\finetune\evaluate.py", line 104, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\finetune\evaluate.py", line 92, in main
+    llm = TransformersLLM(args.model, adapter, args.load_in_4bit)
+  File "C:\Users\hvsax\AppData\Roaming\Claude\scratch-workspaces\e439a88f-dcaf-4d24-b3e7-1bdf14138d9a\dc7b733d-9894-4b7f-aa29-b79dba1ad557\scratch-2026-11-02-677acc\src\findoc\llm.py", line 22, in __init__
+    self._tokenizer = AutoTokenizer.from_pretrained(adapter or model)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 807, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\transformers\configuration_utils.py", line 883, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\transformers\configuration_utils.py", line 933, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\transformers\configuration_utils.py", line 985, in _get_config_dict
+    resolved_config_file = cached_file(
+        pretrained_model_name_or_path,
+    ...<8 lines>...
+        subfolder=subfolder,
+    )
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\transformers\utils\hub.py", line 370, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\hvsax\.venvs\findoc\Lib\site-packages\transformers\utils\hub.py", line 569, in cached_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: outputs/smoke is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+base {"accuracy": 0.0, "refusal_rate": 0.0, "citation_rate": 0.0, "answerable": 3, "answerable_correct": 0, "unanswerable": 0, "unanswerable_refused": 0, "cited": 0}
+DONE

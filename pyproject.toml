@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "findoc"
+version = "0.1.0"
+description = "Financial document intelligence: ingestion, OCR, retrieval, cited Q&A, and LoRA fine-tuning."
+requires-python = ">=3.10"
+dependencies = [
+    "pymupdf>=1.24.3",
+    "pillow",
+    "pytesseract",
+    "faiss-cpu>=1.9",
+    "sentence-transformers>=6.0",
+    "httpx",
+    "numpy",
+]
+
+[project.optional-dependencies]
+qdrant = ["qdrant-client>=1.12"]
+office = ["unstructured[docx]"]
+llm = ["torch", "transformers>=5.0", "accelerate"]
+finetune = ["torch", "transformers>=5.0", "accelerate", "peft>=0.12", "datasets"]
+qlora = ["bitsandbytes"]
+dev = ["pytest"]
+
+[project.scripts]
+findoc = "findoc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: downloads models or runs them on CPU"]
+addopts = "-m 'not slow'"
